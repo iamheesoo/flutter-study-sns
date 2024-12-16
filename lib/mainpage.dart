@@ -17,13 +17,17 @@ class _MainPageState extends State<MainPage> {
     BottomNavigationBarItem(icon: Icon(Icons.favorite), label: "3번"),
     BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: "4번"),
   ];
-  List pages = [HomeScreen(), ShowGridScreen(),  MyLikeScreen(),MyScreen()];
+  List pages = [HomeScreen(), ShowGridScreen(), MyLikeScreen(), MyScreen()];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("MainPage"),
+        title: Text(
+          "MainPage",
+          style: TextStyle(fontFamily: 'NanumGothicCoding'),
+        ),
+        centerTitle: true,
       ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,

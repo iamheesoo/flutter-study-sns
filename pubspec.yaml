@@ -97,3 +97,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  fonts:
+    - family: NanumGothicCoding
+      fonts:
+      - asset: assets/font/NanumGothicCoding-Bold.ttf
+      - asset: assets/font/NanumGothicCoding-Regular.ttf
