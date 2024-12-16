@@ -15,6 +15,7 @@ class _LandingPageState extends State<LandingPage> {
     Timer(Duration(seconds: 3), () {
       Get.offAll(MainPage());
     });
+    super.initState();
   }
 
   @override
