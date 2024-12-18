@@ -33,6 +33,7 @@ dependencies:
   get: ^4.6.6
 
   smooth_page_indicator: ^1.2.0+3
+  cloud_firestore: ^5.5.1
 
 
   # The following adds the Cupertino Icons font to your application.
