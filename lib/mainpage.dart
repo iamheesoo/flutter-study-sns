@@ -3,6 +3,8 @@ import 'package:flutter_study_sns/mainpages/homescreen.dart';
 import 'package:flutter_study_sns/mainpages/mylikescreen.dart';
 import 'package:flutter_study_sns/mainpages/myscreen.dart';
 import 'package:flutter_study_sns/mainpages/showgridscreen.dart';
+import 'package:flutter_study_sns/testpage.dart';
+import 'package:get/get.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -23,10 +25,17 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "MainPage",
-          style: TextStyle(fontFamily: 'NanumGothicCoding'),
-        ),
+        title: GestureDetector(
+          onTap: () {
+            Get.to(TestPage());
+          },
+          child: Text(
+            "MainPage",
+            style: TextStyle(fontFamily: 'NanumGothicCoding'),
+          ),
+        )
+
+        ,
         centerTitle: true,
       ),
       bottomNavigationBar: BottomNavigationBar(
